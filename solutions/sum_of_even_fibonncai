@@ -1,0 +1,8 @@
+import math as m
+PHI = (1 + m.sqrt(5))/2
+PSI = (1 - m.sqrt(5))/2
+
+def nth_fib(n:int) -> int:
+  return int(round((1/m.sqrt(5))*(pow(PHI,n)-pow(PSI, n))))
+
+print(nth_fib(1))
